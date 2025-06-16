@@ -18,7 +18,6 @@ void update(int idx, int l, int r, int i, int v){
 }
 
 long long query(int idx, int l, int r, int i, int j){
-    //printf("%d %d %d %d %d\n",idx,l,r,i,j);
     if(j < l || i > r) return 0;
     
     if(l>=i && r <= j) return seg[idx];
